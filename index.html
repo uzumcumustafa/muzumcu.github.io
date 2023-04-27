@@ -1,27 +1,11 @@
 <html>
 <head>
-    <title>Mobile Ready Screen-Set Implementation Example</title>
-    <meta name="viewport" content="width=device-width"><!-- VERY IMPORTANT TO PLACE HERE!! -->
-    <SCRIPT type="text/javascript" lang="javascript"
-       src="http://cdn.gigya.com/js/gigya.js?apikey=4_qZwZQI9dqrpQLn-LM_u9Yw"></SCRIPT>     
-</head>
-<body>
-        <a href="#" onclick="gigya.accounts.showScreenSet({screenSet:'Default-RegistrationLogin'});">Login</a>  |  
-        <a href="#" onclick="gigya.accounts.showScreenSet({screenSet:'Default-RegistrationLogin', startScreen:'gigya-register-screen'});">Register</a>    
-        </br></br></br>
-        <a href="#" onclick="gigya.accounts.showScreenSet({screenSet:'Default-ProfileUpdate'});">Edit Your Profile</a>    
-        </br></br></br>
-        <a href="#" onclick="gigya.accounts.logout({callback:onLogout});">Logout</a>    
-<script>
-    function onLogout(response) {  
-        if ( response.errorCode == 0 ) {               
-            alert('You are now logged out');
-        }
-        else {
-            alert('Error :' + response.errorMessage);
-        }
-    }
-</script>
-</body>
+  <title> Mobile Ready Screen-Set Implementation Example </title>
+  <meta name="viewport" content="width=device-width">
+  <SCRIPT type="text/javascript" lang="javascript" src="https://cdns.eu1.gigya.com/js/gigya.js?apikey=4_qZwZQI9dqrpQLn-LM_u9Yw"></SCRIPT>
+  </head>
+  <body>
+    <a href="#" onclick="gigya.accounts.showScreenSet({screenSet: 'Default-LiteRegistration'});">Subscribe Here!</a>
+  </body>
 </html>
   
